@@ -1,0 +1,143 @@
+/**
+ * Created by Appchina on 13-10-8.
+   @author	lxl.chen at 2013/10/8 build.
+ */
+html {
+    min-height: 100%;
+    _height:100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    height:100%;
+    overflow: hidden;
+}
+
+#headView{
+    width:100%;
+    height:10%;
+    position: relative;
+    box-shadow: 1px 2px 3px 0 #828e9a;
+    background: #fff;
+    z-index: 302;
+    min-height: 90px;
+}
+
+.img_logo{
+    position: absolute;
+    margin-left: 38px;
+    margin-top: 17px;
+    height: 60px;
+    width: 144px;
+    background-image: url(../img/logo.png);
+}
+.img_search{
+    position:absolute;
+    margin:0 0 0 230px;
+    height:90px;
+    width: 100%;
+}
+.btn_search{
+    background-image: url(../img/search.png);
+    width: 77px;
+    height: 36px;
+    margin:-1px 0 0px 265px;
+    cursor: pointer;
+}
+
+.serachdiv_text{
+    position: absolute;
+    background: url(../img/searchbar.png);
+    width: 267px;
+    height: 36px;
+}
+#search_text{
+    border: none;
+    margin:4px 4px 4px 5px;  /*上右下左*/
+    width: 257px;
+    cursor: text;
+    font-size:20px;
+}
+.search_box{
+    height: auto;
+    width: auto;
+    position:relative;
+    top:40%;
+}
+.r_head{
+    width: 350px;
+    height:34px;
+}
+.r_footer{
+    font-weight:bold;
+    padding-left:14px;
+}
+#pro{
+    padding-left: 15px;
+    padding-top: 4px;
+    padding-right: 15px;
+    width:320px;
+    height:205px;
+}
+.pro_table_div{
+    padding-left: 10px;
+    padding-top: 4px;
+    padding-right: 10px;
+    width: 320px;
+    height: 205px;
+}
+.pro_table{
+    width:330px;
+    height:200px;
+    text-align: center;
+    outline-width:20px;
+    table-layout : fixed;
+    border-spacing: 9px;
+}
+
+#r_title{
+    line-height:40px;
+    padding-left:14px;
+    font-weight:bold;
+}
+
+#container{
+    position: relative;
+    height: 90%;
+    overflow: hidden;
+}
+.pro_td{
+    background: #00aeef;
+}
+.pro_name2{
+    font-family: "黑体",serif;
+    font-size: 10px;
+    font-weight:bold;
+    color: #FFFFFF;
+}
+
+.pro_name{
+    font-family: "黑体",serif;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.demo_box{
+    position:absolute;
+    top:0;
+    left: 0;
+    width: 350px;
+    height:100%;
+    background-image: url(../img/leftsidebar.png);
+    box-shadow: 1px 3px 4px 0 #828e9a;
+    z-index: 201;
+}
+
+#iCenter{
+    height:100%;
+    margin:0 0 0 350px;
+    border:1px solid #F6F6F6;
+    overflow: hidden;
+}
+

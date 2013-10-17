@@ -1,0 +1,54 @@
+<html ng-app="map">
+<head>
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <title>自闭症诊断医院查询地图</title>
+
+    <link rel="stylesheet" href="css/mapui.css">
+    <link rel="stylesheet" href="css/map.css">
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script src="js/jquery.icheck.js"></script>
+    <script src="lib/angular/angular.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/app.js"></script>
+    <script language="javascript" src="http://webapi.amap.com/maps?v=1.2&key=c84af8341b1cc45c801d6765cda96087"></script>
+    <script src="js/data/hospital.js"></script>
+    <script src="js/data/province.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/mapaction.js"></script>
+
+</head>
+<body ng-controller="MapListCtrl">
+<div id="headView">
+    <div class="img_logo"></div>
+    <div class="img_search">
+        <div class="search_box">
+            <div class="serachdiv_text"><input id="search_text" onkeypress="makerTo()" onkeydown="" type="text"  ng-model="location" name="search_key" placeholder="输入您所在的地区" /></div>
+            <input class="btn_search" type="button" ng-click ="makerTo()" />
+            <p>您所在的省是：{{yourProvince}}</p>
+        </div>
+    </div>
+</div>
+<div id="container">
+    <div id="iCenter"></div>
+    <div class="demo_box">
+        <div class="r_head">
+            <div id="r_title"><b>关键字查询结果:</b></div>
+        </div>
+        <div id="result"></div>
+        <div class="r_footer">点击选择要查找的省份</div>
+        <div class="pro_table_div">
+            <table class="pro_table">
+                <tr ng-repeat="pro in pros" class="">
+                    <td ng-repeat="province in pro" class="pro_td">
+                        <a ng-click="btnOnProvince(province.name)" class="pro_name">{{province.name}}</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
